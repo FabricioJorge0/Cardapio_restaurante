@@ -1,0 +1,34 @@
+
+
+
+.topo{
+    max-width: 1024px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url('../../../public/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    margin-bottom: 40px;
+}
+
+.topoTitulo{
+    max-width: 50%;
+    text-align: center;
+
+}
+
+.topoTitulo h1{
+    font-size: 46px;
+    color: #daa520;
+    text-shadow: 10px -1px 10px;
+}
+
+.topoTitulo p{
+    font-size: 32px;
+    color: #daa520;
+    font-family: 'Dancing Script', cursive;
+}
