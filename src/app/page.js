@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Topo/>
-      <main>
+      <main className={styles.container}>
         <Categoria_buscas/>
       </main>
     </div>

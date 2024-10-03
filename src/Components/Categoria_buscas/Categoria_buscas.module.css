@@ -1,0 +1,66 @@
+.catBuscas{
+    width: 1024px;
+
+}
+
+.btnCategorias{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.buttonCat{
+    width: 150px;
+    padding: 10px 0;  
+    border: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.iconeImg{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.buttonCat:hover{
+    background-color: #daa520;
+    cursor: pointer;
+}
+
+.inputBuscas{
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebeaea;
+    border-radius: 18px;
+    padding: 8px 0;
+}
+
+.inputTxt{
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+    
+}
+
+.iconeLupa{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.inputTxt:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+

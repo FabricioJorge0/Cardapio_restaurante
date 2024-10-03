@@ -1,4 +1,12 @@
 .page{
     width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+}
+
+.container{
+    padding: 50px 20px;
 }

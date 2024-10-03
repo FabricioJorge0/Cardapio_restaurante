@@ -10,19 +10,18 @@ import IconeSobremesa from '../../../public/Icones/sobremesa.png'
 
 export default function Categorias_Buscas(){
     return(
-        <section className={style.catBucas}>
+        <section className={style.catBuscas}>
             <div className={style.btnCategorias}>
-                <button><Image className={style.iconeImg} src={IconeEntrada}/> Entradas </button>
-                <button><Image className={style.iconeImg} src={IconeMassa}/> Massas </button>
-                <button><Image className={style.iconeImg} src={IconeCarne}/> Carnes </button>
-                <button><Image className={style.iconeImg} src={IconeBebidas}/> Bebidas </button>
-                <button><Image className={style.iconeImg} src={IconeSalada}/> Saladas </button>
-                <button><Image className={style.iconeImg} src={IconeSobremesa}/> Sobremesas </button>
+                <button className={style.buttonCat}><Image className={style.iconeImg} src={IconeEntrada}/> Entradas </button>
+                <button className={style.buttonCat}><Image className={style.iconeImg} src={IconeMassa}/> Massas </button>
+                <button className={style.buttonCat}><Image className={style.iconeImg} src={IconeCarne}/> Carnes </button>
+                <button className={style.buttonCat}><Image className={style.iconeImg} src={IconeBebidas}/> Bebidas </button>
+                <button className={style.buttonCat}><Image className={style.iconeImg} src={IconeSalada}/> Saladas </button>
+                <button className={style.buttonCat}><Image className={style.iconeImg} src={IconeSobremesa}/> Sobremesas </button>
             </div>
             <div className={style.inputBuscas}>
-                <input className={style.inputTxt
-                    
-                } type="text" placeholder='Pesquise aqui um dos pratos do nosso cardápio' />
+                <Image className={style.iconeLupa} src={IconeLupa}/>
+                <input className={style.inputTxt} type="text" placeholder='Pesquise aqui um dos pratos do nosso cardápio' />
             </div>
         </section>
     )
