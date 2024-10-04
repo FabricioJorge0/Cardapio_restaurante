@@ -24,10 +24,27 @@ export default function Home() {
 
   const [dadosFiltrados, setDadosFiltrados] = useState(filtrarProdutos);
   const [btnClicado, setBtnClicado] = useState('Entradas')
+  const [textoBusca, setTextoBusca] = useState('')
 
   const mudarCategoria = (categoria) => {
       setDadosFiltrados(produtos.filter((produto) => produto.categoria === categoria))
       setBtnClicado(categoria)
+      setTextoBusca('')
+
+  }
+
+
+  const buscarProduto = (textDigitado, e) => {
+    setTextoBusca(textDigitado)
+    setDadosFiltrados(produtos.filter((produto) => 
+      produto.nome.toLowerCase().includes(textDigitado.toLowerCase()) || 
+      produto.categoria.toLowerCase().includes(textDigitado.toLowerCase()))
+    )
+    // event.preventDefault()
+  
+    if(textDigitado === ''){
+        setDadosFiltrados(filtrarProdutos)
+    }
   }
 
 
@@ -70,7 +87,7 @@ export default function Home() {
             </div>
             <div className={styles.inputBuscas}>
                 <Image className={styles.iconeLupa} src={IconeLupa}/>
-                <input className={styles.inputTxt} type="text" placeholder='Pesquise aqui um dos pratos do nosso cardápio' />
+                <input id='inputValue' onChange={(event) => buscarProduto(event.target.value)} value={textoBusca} className={styles.inputTxt} type="text" placeholder='Pesquise aqui um dos pratos do nosso cardápio' />
             </div>
         </section>
 
