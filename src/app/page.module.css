@@ -10,3 +10,98 @@
 .container{
     padding: 50px 20px;
 }
+
+.titulo{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: #daa520;
+    margin-bottom: 30px;
+}
+
+.containerCardapio{
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+.catBuscas{
+    width: 1024px;
+    margin-bottom: 30px;
+}
+
+.btnCategorias{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.apagarBtn{
+    width: 150px;
+    padding: 10px 0;  
+    border: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.acenderBtn{
+    width: 150px;
+    padding: 10px 0;  
+    border: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #daa520;
+}
+
+.iconeImg{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.buttonCat:hover{
+    background-color: #daa520;
+    cursor: pointer;
+}
+
+.inputBuscas{
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebeaea;
+    border-radius: 18px;
+    padding: 8px 0;
+}
+
+.inputTxt{
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+    
+}
+
+.iconeLupa{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.inputTxt:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
+
