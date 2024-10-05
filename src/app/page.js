@@ -85,11 +85,11 @@ export default function Home() {
                     Sobremesas 
                 </button>
             </div>
-            <div className={styles.inputBuscas}>
-                <Image className={styles.iconeLupa} src={IconeLupa}/>
-                <input id='inputValue' onChange={(event) => buscarProduto(event.target.value)} value={textoBusca} className={styles.inputTxt} type="text" placeholder='Pesquise aqui um dos pratos do nosso cardápio' />
-            </div>
         </section>
+        <div className={styles.inputBuscas}>
+            <Image className={styles.iconeLupa} src={IconeLupa}/>
+            <input id='inputValue' onChange={(event) => buscarProduto(event.target.value)} value={textoBusca} className={styles.inputTxt} type="text" placeholder='Pesquise aqui um dos pratos do nosso cardápio' />
+        </div>
 
         <h2 className={styles.titulo}>Cardápio</h2>
         <div className={styles.containerCardapio}>
