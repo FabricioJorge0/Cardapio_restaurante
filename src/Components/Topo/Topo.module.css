@@ -7,11 +7,10 @@
     margin: 0 auto;
     background-image: url('../../../public/banner.png');
     background-repeat: no-repeat;
-    background-position: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: 100%;
+    background-size:cover;
     margin-bottom: 40px;
 }
 
@@ -36,5 +35,20 @@
 @media (max-width: 768px){
     .topo{
         max-width: 100%;
+        height: auto;
+        
     }
+
+    .topoTitulo{
+        max-width: 100%;
+    }
+
+    .topoTitulo h1{
+        margin:40px 0 40px 0;
+        font-size: 36px;
+    }
+    .topoTitulo p{
+        font-size: 22px;
+    }
+
 }

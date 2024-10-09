@@ -131,5 +131,44 @@
 
 }
 
+@media (max-width: 768px){
+    .page{
+        width: 100%;
+    }
+    
+    .catBuscas{
+         width: 100%;   
+         display: flex;
+         margin: 0 auto;
+
+    }
+    .btnCategorias{
+        flex-wrap: wrap;
+    }
+
+    .inputBuscas{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .titulo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerCardapio{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 
